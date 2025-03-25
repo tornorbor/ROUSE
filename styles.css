@@ -6,66 +6,77 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    background: #f3f3f3;
+    color: #333;
     text-align: center;
+    padding: 0 20px;
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 10px;
+    background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
 }
 
-header h1 {
+.background {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-section {
+    margin-top: 20px;
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.video-section h2 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #4CAF50;
 }
 
-header p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 30px;
+.music-links {
+    margin-top: 30px;
 }
 
-.links {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.link-item {
-    font-size: 40px;
-    color: #333;
-    text-decoration: none;
+.music-link {
+    display: inline-block;
     margin: 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.link-item:hover {
+.music-link:hover {
+    background-color: #4CAF50;
+    color: white;
     transform: scale(1.1);
-    color: #0077b5; /* Change color on hover (blue for LinkedIn) */
 }
 
-.link-item .fa-instagram {
-    color: #e4405f;
+.music-link i {
+    margin-right: 10px;
 }
 
-.link-item .fa-facebook {
-    color: #3b5998;
-}
-
-.link-item .fa-twitter {
-    color: #1da1f2;
-}
-
-.link-item .fa-linkedin {
-    color: #0077b5;
-}
+.music-link:nth-child(1) { color: #FF0000; }
+.music-link:nth-child(2) { color: #1DB954; }
+.music-link:nth-child(3) { color: #00A3E0; }
+.music-link:nth-child(4) { color: #000000; }
+.music-link:nth-child(5) { color: #FF9900; }
