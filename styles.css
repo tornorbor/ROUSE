@@ -5,78 +5,69 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f3f3f3;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
     text-align: center;
     padding: 0 20px;
 }
 
 .container {
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 80%;
-    max-width: 1000px;
+    background-color: #333;
+    width: 100%;
+    max-width: 800px;
     margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.background {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.bg-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.video-section {
-    margin-top: 20px;
+.logo h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .video-section iframe {
     width: 100%;
     height: 315px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.video-section h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: #4CAF50;
+.video-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .music-links {
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .music-link {
     display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
+    padding: 12px 25px;
+    background-color: #444;
     text-decoration: none;
+    color: #fff;
     border-radius: 30px;
-    color: #333;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .music-link:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1DB954;
     transform: scale(1.1);
 }
 
 .music-link i {
-    margin-right: 10px;
+    margin-right: 8px;
 }
-
-.music-link:nth-child(1) { color: #FF0000; }
-.music-link:nth-child(2) { color: #1DB954; }
-.music-link:nth-child(3) { color: #00A3E0; }
-.music-link:nth-child(4) { color: #000000; }
-.music-link:nth-child(5) { color: #FF9900; }
