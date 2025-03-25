@@ -42,12 +42,47 @@ body {
     color: #fff;
 }
 
-.background-image img {
+.background-image {
+    position: relative;
+    margin-top: 20px;
+}
+
+.bg-img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 20px;
+    opacity: 0.8; /* Adjust opacity of background image */
 }
 
-.music
+.music-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 10; /* Ensure buttons are above the background image */
+}
+
+.music-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #444;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.music-link:hover {
+    background-color: #1DB954;
+    transform: scale(1.1);
+}
+
+.music-link i {
+    margin-right: 8px;
+}
